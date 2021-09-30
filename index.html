@@ -52,7 +52,10 @@
         <!-- Inicialization Page -->
         <script>
             $(document).ready(function() { 
-                $("#code").change(function(){
+                
+                
+                $("#code").on("change", function(){
+                    // alert($("#code").val());
                     function toDecimal(bin) {
                         let dec = 0;
                         for (let c = bin.length - 1, i = 0; c >= 0; c--, i++) {
@@ -60,13 +63,9 @@
                         }
                         return dec;
                     }
-
-                    $("#result").append(toDecimal('1101010'));
-
-                    // console.log(
-                    //     toDecimal('1101010'),
-                    //     toDecimal('1101010') === parseInt('1101010', 2)
-                    // );
+                    // alert(toDecimal("1111100000"));
+                    
+                    // $("#result").val(toDecimal(this));
                 });
             });          
         </script>
