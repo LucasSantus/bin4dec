@@ -18,25 +18,23 @@
     <body class="bg-body">
         <main>
             <div class="item-center">
-                <div class="d-flex flex-column bd-highlight" style="display: flex;">
-                    <div class="col-auto">
-                        <label for="code" class="col-form-label">Password</label>
+                <div class="d-flex flex-column">
+                    <div class="mt-2 fs-5 fw-normal">
+                        <label for="code">Password</label>
                     </div>
-                    <div class="col-auto">
-                        <input type="number" id="code" class="form-control" aria-describedby="passwordHelpInline">
+                    <div class="mt-2">
+                        <input type="text" id="code" class="form-control"oninput="this.value = this.value.replace(/[^0-1.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
                     </div>
-                    <div class="col-auto">
-                        <span id="passwordHelpInline" class="form-text">
-                        Must be 8-20 characters long.
+                    <div class="mt-2">
+                        <span class="form-text fs-6">
+                            Must be 8-20 characters long.
                         </span>
                     </div>
-                    <div class="text-center">
-                        <section>
-                            <span class="w-100">Resultado</span>
-                        </section>
-                        <section>
-                            <span id="result" class="w-100">fdsgdsg</span>
-                        </section>
+                    <div class="mt-2 text-center">
+                        <div class="d-flex flex-column">
+                            <span>Resultado</span>
+                            <span id="result"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,6 +52,22 @@
         <!-- Inicialization Page -->
         <script>
             $(document).ready(function() { 
+                $("#code").change(function(){
+                    function toDecimal(bin) {
+                        let dec = 0;
+                        for (let c = bin.length - 1, i = 0; c >= 0; c--, i++) {
+                            dec += bin[c] * Math.pow(2, i);
+                        }
+                        return dec;
+                    }
+
+                    $("#result").append(toDecimal('1101010'));
+
+                    // console.log(
+                    //     toDecimal('1101010'),
+                    //     toDecimal('1101010') === parseInt('1101010', 2)
+                    // );
+                });
             });          
         </script>
     </body>
