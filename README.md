@@ -1,8 +1,8 @@
 <h1 align="center">Bin4Dec</h1>
 
-![Logo](/github/images/logo-text.png "logo")
+![Logo](/github/images/logo-text.svg "logo")
 
-![Image Project](/github/images/project-image.png "image project")
+![Image Project](/github/images/project-image.svg "image project")
 
 <h3 id="sobre">:information_source: Sobre</h3>
 
