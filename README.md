@@ -1,8 +1,9 @@
-<h1 align="center">Bin4Dec</h1>
+<h1 align="center">
+	<img src="/github/images/logo-text.svg" width="150px">
+</h1>
 
-![Logo](/github/images/logo-text.svg "logo")
 
-![Image Project](/github/images/project-image.svg "image project")
+<img src="/github/images/Image Project (1).svg" width="100%">
 
 <h3 id="sobre">:information_source: Sobre</h3>
 
