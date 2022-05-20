@@ -1,5 +1,9 @@
 <h1 align="center">Bin4Dec</h1>
 
+![Logo](/github/images/logo-text.png "logo")
+
+![Image Project](/github/images/project-image.png "image project")
+
 <h3 id="sobre">:information_source: Sobre</h3>
 
 > Este projeto foi desenvolvido utilizando as técnologias HTML, CSS e JavaScript.
