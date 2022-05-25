@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img src="/github/logo-text.svg" width="150px">
+	Bin 4 Dec
 </h1>
 
 <h3 id="sobre">:information_source: Sobre</h3>
