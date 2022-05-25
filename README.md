@@ -1,9 +1,6 @@
 <h1 align="center">
-	<img src="/github/images/logo-text.svg" width="150px">
+	<img src="/github/logo-text.svg" width="150px">
 </h1>
-
-
-<img src="/github/images/Image Project (1).svg" width="100%">
 
 <h3 id="sobre">:information_source: Sobre</h3>
 
