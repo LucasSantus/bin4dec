@@ -2,6 +2,10 @@
 	Bin 4 Dec
 </h1>
 
+<h6 align="center"> 
+	Se você quiser visualizar o projeto, clique <a href="https://lucassantus.github.io/portfolio/projects/bin4dec/" target="_blank">aqui</a>.
+</h6>
+
 <h3 id="sobre">:information_source: Sobre</h3>
 
 > Este projeto foi desenvolvido utilizando as técnologias HTML, CSS e JavaScript.
@@ -19,7 +23,6 @@ _"Criar um sistema básico onde o mesmo converterá números binários em númer
 * [Status do Projeto](#status)
 * [Por Que](#por-que)
 * [Funcionalidades](#funcionalidades)
-* [Comandos](#comandos)
 * [Autor](#autor)
 * [Licença](#license)
 
