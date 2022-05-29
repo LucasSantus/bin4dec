@@ -23,7 +23,6 @@ _"Criar um sistema básico onde o mesmo converterá números binários em númer
 * [Status do Projeto](#status)
 * [Por Que](#por-que)
 * [Funcionalidades](#funcionalidades)
-* [Comandos](#comandos)
 * [Autor](#autor)
 * [Licença](#license)
 
