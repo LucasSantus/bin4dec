@@ -5,14 +5,23 @@
     <!-- BEGIN: HEAD -->
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- URL Project -->
+        <link rel="canonical" href="https://lucassantus.github.io/portfolio/bin4dec/"/>
+
+        <!-- Description Project -->
+        <meta name="author" content="Lucas Eduardo de Oliveira Santos">
+        <meta name="description" content="Site construído para conversão de números bináris em números decimais.">
 
         <!-- Import Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/images/Bin4Dec.png">
+        <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
 
-        <!-- Import CSS Personalizado -->
-        <link rel="stylesheet" href="assets/css/styles.min.css">
+        <!-- BEGIN: CSS -->
+            <!-- Import CSS Custom -->
+            <link rel="stylesheet" href="assets/css/styles.min.css">
+        <!-- SCRIPTS: CSS -->
 
         <!-- Name Page -->
         <title>Bin4Dec</title>
@@ -21,41 +30,48 @@
 
     <!-- BEGIN: BODY -->
     <body class="bg-body font-grape text-white">
+
+        <!-- BEGIN: MAIN -->
         <main>
             <div class="d-flex flex-column justify-content-center align-items-center h-100">
                 <input type="text" id="form__binary" class="form-control font-grape" value="1010" oninput="this.value = this.value.replace(/[^0-1.]/g, '').replace(/(\..*?)\..*/g, '$1')" />
                 <span id="result__decimal" class="fs-2">10</span>
             </div>
         </main>
+        <!-- END: MAIN -->
 
+        <!-- BEGIN: FOOTER -->
         <footer>
             <div class="text-center fs-5">
                 © Copyright 2021 - <span id="year"></span> Bin4Dec | Todos os direitos reservados
             </div>
         </footer>
+        <!-- END: FOOTER -->
 
-        <!-- Import JS JQuery -->
-        <script src="assets/js/jquery.min.js"></script>
+        <!-- BEGIN: SCRIPTS -->
+            <!-- Import JS JQuery -->
+            <script src="assets/js/jquery.min.js"></script>
 
-        <!-- Inicialization Page -->
-        <script>
-            $(document).ready(function() {
+            <!-- Inicialization Page -->
+            <script>
+                $(document).ready(function() {
 
-                // Recover Year 
-                $("#year").empty().append(
-                    new Date().getFullYear()
-                );
+                    // Recover Year 
+                    $("#year").empty().append(
+                        new Date().getFullYear()
+                    );
 
-                // Convert Binary in Decimal
-                $("#form__binary").on("change", function(){
-                    $("#result__decimal").empty().append(
-                        $(this).val().split('').reverse().reduce(function(x, y, i){
-                            return (y === '1') ? x + Math.pow(2, i) : x;
-                        }, 0)
-                    )
-                });
-            });          
-        </script>
+                    // Convert Binary in Decimal
+                    $("#form__binary").on("change", function(){
+                        $("#result__decimal").empty().append(
+                            $(this).val().split('').reverse().reduce(function(x, y, i){
+                                return (y === '1') ? x + Math.pow(2, i) : x;
+                            }, 0)
+                        )
+                    });
+                });          
+            </script>
+        <!-- END: SCRIPTS -->
     </body>
     <!-- END: BODY -->
 </html>
